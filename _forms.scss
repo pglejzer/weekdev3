@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+$font-main : 'Montserrat',
+sans-serif;
+$font-stack: 'Roboto Slab',
+serif;
+$main-color:#7cc576;
+$white-color:#fff;
+$grey-color: #777;
+%title-paragraph {
+    height: 14px;
+    color: #222222;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+%no-anchor{
+    text-decoration: none;
+}
+%paragraph-responsive {
+    width: 274px;
+    height: 57px;
+    color: #777777;
+    font-family: $font-stack;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.2rem;
+}
+
+%flex-center-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-center-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+}

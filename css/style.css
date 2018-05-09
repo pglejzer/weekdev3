@@ -345,7 +345,7 @@ body {
 .culture {
   padding: 100px 0;
   height: auto;
-  max-height: 600px;
+  min-height: 460px;
   background-color: #f9f9f9; }
   .culture .cultureContainer__wrapper {
     margin: 0 auto;
@@ -386,13 +386,12 @@ body {
 
 .clients {
   height: auto;
-  max-height: 800px; }
+  max-height: 1690px; }
   .clients .clientContainer__wrapper {
     margin: 0 auto;
     padding: 100px 20px; }
     .clients .clientContainer__wrapper .clinetContainer__h2 {
       text-align: center;
-      height: 30px;
       color: #222222;
       font-size: 40px;
       font-weight: 700;
@@ -597,9 +596,6 @@ body {
         padding-left: 9px; }
 
 @media (max-width: 622px) {
-  .header__heading {
-    font-size: 42px; }
-
   .button-toggle-nav {
     display: flex;
     align-items: center;
@@ -654,12 +650,26 @@ body {
   .relaxMachine {
     display: none; }
 
+  .relaxBackground__text {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 25px; }
+
+  .relaxBackground__h2 {
+    font-size: 25px; }
+
   .footer__main .footerContainer {
     flex-direction: column; }
     .footer__main .footerContainer .footer_imgaes {
       padding-top: 15px;
-      padding-left: 0px; } }
-@media (max-width: 1060px) {
+      padding-left: 0px; }
+
+  .clients .clientContainer__wrapper .clinetContainer__h2 {
+    font-size: 25px;
+    padding-bottom: 40px; }
+  .clients .clientContainer__wrapper .clientContainer__p {
+    font-size: 15px; } }
+@media (max-width: 1062px) {
   .cultureContainer__img--line {
     display: none; }
 
@@ -704,6 +714,38 @@ body {
       justify-content: center;
       padding-top: 20px;
       padding-bottom: 20px;
-      padding-left: 0px; } }
+      padding-left: 0px; }
+
+  .relaxMachine {
+    display: none; } }
+@media (max-width: 954px) {
+  .clients .clientContainer__items {
+    margin-top: 10px;
+    margin-left: 0px; }
+    .clients .clientContainer__items .clientContainer__p--bigger {
+      font-size: 17px !important; }
+    .clients .clientContainer__items .clientContainer__p--smaller {
+      font-size: 10px !important; }
+  .clients .clientContainer__items--size {
+    margin-top: 10px;
+    margin-right: 0px; }
+
+  .project {
+    background: none; }
+    .project::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: url(../images/3.latestproject/tablet.png) no-repeat bottom right;
+      opacity: 0.4; }
+    .project .portfolioContainer__wrapper .portfolio__projects .portfolio__item .portfolio__img {
+      width: 60px;
+      height: 60px; }
+    .project .portfolioContainer__wrapper .portfolio__projects .portfolio__item .portfolio__item--column {
+      padding-top: 0px; } }
 
 /*# sourceMappingURL=style.css.map */

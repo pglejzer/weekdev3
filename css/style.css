@@ -354,7 +354,8 @@ body {
       color: #222222;
       font-size: 40px;
       font-weight: 700;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      padding-bottom: 18px; }
     .culture .cultureContainer__wrapper .cultureContainer__p {
       text-align: center;
       color: #777;
@@ -646,17 +647,6 @@ body {
     font-size: 10px;
     padding: 12px 18px; }
 
-  .relaxMachine {
-    display: none; }
-
-  .relaxBackground__text {
-    padding-top: 40px;
-    padding-bottom: 20px;
-    font-size: 25px; }
-
-  .relaxBackground__h2 {
-    font-size: 25px; }
-
   .footer__main .footerContainer {
     flex-direction: column; }
     .footer__main .footerContainer .footer_imgaes {
@@ -668,7 +658,18 @@ body {
     font-size: 25px;
     padding-bottom: 40px; }
   .clients .clientContainer__wrapper .clientContainer__p {
-    font-size: 15px; } }
+    font-size: 15px; }
+
+  .relax .relaxMachine {
+    display: none; }
+  .relax .relaxBackground .relaxBackground__text {
+    padding-left: 25px; }
+    .relax .relaxBackground .relaxBackground__text .relaxBackground__h2 {
+      padding-bottom: 25px;
+      padding-right: 5px;
+      font-size: 30px; }
+    .relax .relaxBackground .relaxBackground__text .relaxBackground__p {
+      font-size: 14px; } }
 @media (max-width: 1062px) {
   .cultureContainer__img--line {
     display: none; }

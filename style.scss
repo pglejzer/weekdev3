@@ -902,7 +902,7 @@ body {
         &::before {
             content: "";
             position: absolute;
-            z-index: 9999;
+            z-index: -1;
             top: 0;
             bottom: -2300px;
             left: 0;

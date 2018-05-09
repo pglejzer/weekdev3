@@ -160,7 +160,6 @@ body {
     justify-content: center;
     align-items: center; }
     .services .servicesContainer .servicesContainer__text .servicesContainer__h2 {
-      height: 30px;
       color: #222222;
       font-size: 40px;
       font-weight: 700;
@@ -168,7 +167,6 @@ body {
       text-transform: uppercase;
       padding-top: 99px; }
     .services .servicesContainer .servicesContainer__text .servicesContainer__p {
-      height: 20px;
       color: #777;
       font-family: "Roboto Slab", serif;
       font-size: 20px;
@@ -231,7 +229,8 @@ body {
         font-family: "Roboto Slab", serif;
         font-size: 16px;
         font-weight: 400;
-        padding-bottom: 29px; }
+        padding-bottom: 29px;
+        padding-right: 10px; }
       .relax .relaxBackground .relaxBackground__text .relaxBackground__ul {
         position: absolute;
         padding-left: 37px; }
@@ -665,6 +664,7 @@ body {
       padding-left: 0px; }
 
   .clients .clientContainer__wrapper .clinetContainer__h2 {
+    text-align: center;
     font-size: 25px;
     padding-bottom: 40px; }
   .clients .clientContainer__wrapper .clientContainer__p {
@@ -707,7 +707,9 @@ body {
     padding-right: 10px; }
   .logo .logoContainer__wrapper .logoContainer__images {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    padding-top: 35px;
+    padding-bottom: 35px; }
     .logo .logoContainer__wrapper .logoContainer__images .logoContainer__img {
       display: flex;
       align-items: center;
@@ -718,7 +720,7 @@ body {
 
   .relaxMachine {
     display: none; } }
-@media (max-width: 954px) {
+@media (max-width: 959px) {
   .clients .clientContainer__items {
     margin-top: 10px;
     margin-left: 0px; }
@@ -746,6 +748,22 @@ body {
       width: 60px;
       height: 60px; }
     .project .portfolioContainer__wrapper .portfolio__projects .portfolio__item .portfolio__item--column {
-      padding-top: 0px; } }
+      padding-top: 0px; }
+
+  .services .servicesContainer .servicesContainer__text .servicesContainer__h2 {
+    text-align: center;
+    font-size: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 99px;
+    line-height: 40px; }
+  .services .servicesContainer .servicesContainer__text .servicesContainer__p {
+    font-size: 15px;
+    padding-top: 10px; }
+  .services .servicesContainer .servicesContainer__types .servicesContainer__icons {
+    padding: 43px 23px; }
+    .services .servicesContainer .servicesContainer__types .servicesContainer__icons .servicesContainer__h3 {
+      padding-top: 37px;
+      padding-bottom: 18px; } }
 
 /*# sourceMappingURL=style.css.map */

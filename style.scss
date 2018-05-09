@@ -146,7 +146,6 @@ body {
             justify-content: center;
             align-items: center;
             .servicesContainer__h2 {
-                height: 30px;
                 color: #222222;
                 font-size: 40px;
                 font-weight: 700;
@@ -155,7 +154,6 @@ body {
                 padding-top: 99px;
             }
             .servicesContainer__p {
-                height: 20px;
                 color: $grey-color;
                 font-family: $font-stack;
                 font-size: 20px;
@@ -243,6 +241,7 @@ body {
                 font-size: 16px;
                 font-weight: 400;
                 padding-bottom: 29px;
+                padding-right: 10px;
             }
             .relaxBackground__ul {
                 position: absolute;
@@ -784,6 +783,7 @@ body {
     .clients {
         .clientContainer__wrapper {
             .clinetContainer__h2 {
+                text-align: center;
                 font-size: 25px;
                 padding-bottom: 40px;
             }
@@ -854,6 +854,8 @@ body {
             .logoContainer__images {
                 display: flex;
                 flex-direction: column;
+                padding-top:35px;
+                padding-bottom: 35px;
                 .logoContainer__img {
                     display: flex;
                     align-items: center;
@@ -870,7 +872,7 @@ body {
     }
 }
 
-@media (max-width: 954px) {
+@media (max-width: 959px) {
     .clients {
         .clientContainer__items {
             margin-top: 10px;
@@ -915,4 +917,33 @@ body {
             }
         }
     }
+        .services {
+            .servicesContainer {
+                .servicesContainer__text {
+                    .servicesContainer__h2 {
+                        text-align: center;
+                        font-size: 25px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        padding-top: 99px;
+                        line-height: 40px;
+                    }
+                    .servicesContainer__p {
+                        font-size: 15px;
+                        padding-top: 10px;
+                    }
+                }
+                .servicesContainer__types {
+                    .servicesContainer__icons {
+                        padding: 43px 23px;
+                        .servicesContainer__img {
+                        }
+                        .servicesContainer__h3 {
+                            padding-top: 37px;
+                            padding-bottom: 18px;
+                        }
+                    }
+                }
+            }
+        }
 }

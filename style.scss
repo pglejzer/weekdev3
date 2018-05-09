@@ -710,7 +710,7 @@ body {
     }
     @keyframes show-menu {
         0% {
-            transform: translateX(100%);
+            transform: translateX(105%);
         }
         100% {
             transform: translateX(0%);
@@ -732,7 +732,7 @@ body {
             transform: translateX(0);
         }
         100% {
-            transform: translateX(110%);
+            transform: translateX(105%);
         }
     }
     .nav__ul_hide {
@@ -902,14 +902,13 @@ body {
         &::before {
             content: "";
             position: absolute;
-            z-index: -1;
+            z-index: 9999;
             top: 0;
-            bottom: 0;
+            bottom: -2300px;
             left: 0;
             right: 0;
-            background: url(../images/3.latestproject/tablet.png) no-repeat bottom right;
-            ;
-            opacity: 0.4;
+            background: url(../images/3.latestproject/isometric-ipad-air.png) no-repeat left bottom;
+            opacity: 0.2;
         }
         .portfolioContainer__wrapper {
             .portfolio__projects {

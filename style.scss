@@ -35,7 +35,6 @@ body {
         &:focus {
             color: $main-color;
         }
-        .nav__logo--img {}
         .nav__logo--text {
             padding-left: 7px;
         }
@@ -71,13 +70,11 @@ body {
         }
     }
 }
-
 .nav__sticky {
-    transition: 0.5s;
-    height: 50px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    height: 70px;
+    box-shadow: 2px 2px 2px rgba(124,197,118, 0.7);
+    transition: .6s;
 }
-
 .titleContainer {
     max-height: 1000px;
     height: auto;
@@ -176,11 +173,6 @@ body {
                     @extend %title-paragraph;
                     padding-top: 37px;
                     padding-bottom: 18px;
-                    &:hover {
-                        transform: scale(1.5);
-                        transition: 0.4s ease-in;
-                        color: $main-color;
-                    }
                 }
                 .servicesContainer__p--smaller {
                     @extend %paragraph-responsive;
@@ -688,265 +680,6 @@ body {
             padding-left: 119px;
             .footer__img {
                 padding-left: 9px;
-            }
-        }
-    }
-}
-
-@media (max-width: 622px) {
-    .nav {
-        .nav__button--toggle {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            align-content: center;
-            z-index: 409;
-        }
-        .nav__ul {
-            display: none;
-            .nav__list--item {
-                width: 100%;
-                margin: 10px 0;
-                display: flex;
-                align-items: center;
-                align-content: center;
-                justify-content: center;
-            }
-        }
-        @keyframes show-menu {
-            0% {
-                transform: translateX(100%);
-            }
-            100% {
-                transform: translateX(0%);
-            }
-        }
-        .nav__ul--responsive {
-            display: flex;
-            position: fixed;
-            width: 80%;
-            height: 100%;
-            background-color: white;
-            flex-wrap: wrap;
-            top: 0;
-            animation: show-menu;
-            animation-duration: 0.6s;
-        }
-        @keyframes hide-menu {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(110%);
-            }
-        }
-        .nav__ul--hide {
-            animation: hide-menu;
-            animation-duration: 0.6s;
-        }
-    }
-
-    .titleContainer {
-        .titleContainer__wrapper {
-            .titleContainer__h1 {
-                font-size: 28px;
-            }
-            .titleContainer__p {
-                font-size: 15px;
-            }
-            .titleContainer__button {
-                font-size: 10px;
-                padding: 12px 18px;
-            }
-        }
-    }
-    .footer__main {
-        .footerContainer {
-            flex-direction: column;
-            .footer_imgaes {
-                padding-top: 15px;
-                padding-left: 0px;
-            }
-        }
-    }
-    .clients {
-        .clientContainer__wrapper {
-            .clinetContainer__h2 {
-                text-align: center;
-                font-size: 25px;
-                padding-bottom: 40px;
-            }
-            .clientContainer__p {
-                font-size: 15px;
-            }
-        }
-    }
-    .relax {
-        .relaxMachine {
-            display: none;
-        }
-        .relaxBackground {
-            .relaxBackground__text {
-                padding-left: 25px;
-                .relaxBackground__h2 {
-                    padding-bottom: 25px;
-                    padding-right: 5px;
-                    font-size: 30px;
-                }
-                .relaxBackground__p {
-                    font-size: 14px;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 1062px) {
-    .cultureContainer__img--line {
-        display: none;
-    }
-    .contact {
-        .contactContainer {
-            .contactRow {
-                display: flex;
-                flex-direction: column;
-                .contactColumn {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    .contact__title {
-                        margin-bottom: 10px;
-                        font-size: 15px;
-                    }
-                    .contact__adress {
-                        margin-left: -37px;
-                        font-size: 10px;
-                    }
-                    .contact_p {
-                        text-align: left;
-                        .contact__link {
-                            font-size: 10px;
-                        }
-                    }
-                    .contact_p--photo,
-                    .contact_p--news,
-                    .contact_p--media {
-                        margin-left: 5px;
-                        width: 150px;
-                    }
-                    .tweet {
-                        .tweet__link,
-                        .tweet__time,
-                        .tweet__hash {
-                            font-size: 10px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (max-width:810px) {
-    .logo {
-        .logoContainer__wrapper {
-            .logoContainer__bg {
-                .logoContainer__h2 {
-                    font-size: 25px;
-                    padding-left: 10px;
-                    padding-right: 10px;
-                }
-            }
-            .logoContainer__images {
-                display: flex;
-                flex-direction: column;
-                padding-top: 35px;
-                padding-bottom: 35px;
-                .logoContainer__img {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    padding-top: 20px;
-                    padding-bottom: 20px;
-                    padding-left: 0px;
-                }
-            }
-        }
-    }
-    .relaxMachine {
-        display: none;
-    }
-}
-
-@media (max-width: 959px) {
-    .clients {
-        .clientContainer__items {
-            margin-top: 10px;
-            margin-left: 0px;
-            .clientContainer__p--bigger {
-                font-size: 17px !important;
-            }
-            .clientContainer__p--smaller {
-                font-size: 10px !important;
-            }
-        }
-        .clientContainer__items--size {
-            margin-top: 10px;
-            margin-right: 0px;
-        }
-    }
-    .project {
-        background: none;
-        &::before {
-            content: "";
-            position: absolute;
-            z-index: -1;
-            top: 0;
-            bottom: -2300px;
-            left: 0;
-            right: 0;
-            background: url(../images/3.latestproject/isometric-ipad-air.png) no-repeat left bottom;
-            opacity: 0.2;
-        }
-        .portfolioContainer__wrapper {
-            .portfolio__projects {
-                .portfolio__item {
-                    .portfolio__img {
-                        width: 60px;
-                        height: 60px;
-                    }
-                    .portfolio__item--column {
-                        padding-top: 0px;
-                    }
-                }
-            }
-        }
-    }
-    .services {
-        .servicesContainer {
-            .servicesContainer__text {
-                .servicesContainer__h2 {
-                    text-align: center;
-                    font-size: 25px;
-                    padding-left: 10px;
-                    padding-right: 10px;
-                    padding-top: 99px;
-                    line-height: 40px;
-                }
-                .servicesContainer__p {
-                    font-size: 15px;
-                    padding-top: 10px;
-                }
-            }
-            .servicesContainer__types {
-                .servicesContainer__icons {
-                    padding: 43px 23px;
-                    .servicesContainer__h3 {
-                        padding-top: 37px;
-                        padding-bottom: 18px;
-                    }
-                }
             }
         }
     }

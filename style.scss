@@ -681,31 +681,33 @@ body {
             .footer__img {
                 margin-left: 12px;
                 background-color: $black-color;
-                padding: 10px 12px;
                 border-radius: 100%;
+                cursor: pointer;
                 &:hover{
                     transition: .7s;
                 }
             }
             .footer__img--twitter{
+                padding: 13px 13px;
                 &:hover{
                     background-color:#1DA1F2;
                 }
             }
             .footer__img--pint{
+                padding: 10px 13px;
                 &:hover{
                     background-color: #BD081D;
                 }
             }
 
             .footer__img--gplus{
+                padding: 12px 13px;
                 &:hover{
                     background-color: #DC444B;
                 }
             }
             .footer__img--facebook{
-                padding-left:15px;
-                padding-right:15px;
+                padding: 12px 16px;
                 &:hover{
                    background-color: #3B5998;
                 }

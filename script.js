@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
 });
 
-
 document.addEventListener("DOMContentLoaded", function(){
     var nav = document.getElementById('nav');
     window.addEventListener('scroll', function(){
@@ -42,6 +41,8 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     }, 900);
 });
 
-
-
-
+$(document).ready(function($){
+    $('.nav__link').on('click', function() {
+        $(".nav__button--toggle").trigger('click');
+    });
+});

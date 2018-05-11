@@ -235,7 +235,7 @@ body {
                 position: absolute;
                 padding-left: 37px;
                 .relaxBackground__li {
-                    list-style-image: url(../images/2.justrelax/2-layers.png);
+                    list-style-image: url(../images/2.justrelax/yes.png);
                     color: #cccccc;
                     font-family: $font-stack;
                     font-size: 16px;
@@ -349,7 +349,7 @@ body {
                 padding-top: 25px;
                 cursor: pointer;
                 &:hover {
-                    color: #000;
+                    color: $black-color;
                     -webkit-transition: color 1s ease-out;
                     -moz-transition: color 1s ease-out;
                     -o-transition: color 1s ease-out;
@@ -679,7 +679,36 @@ body {
             justify-content: center;
             padding-left: 119px;
             .footer__img {
-                padding-left: 9px;
+                margin-left: 12px;
+                background-color: $black-color;
+                padding: 10px;
+                border-radius: 100%;
+                &:hover{
+                    transition: .7s;
+                }
+            }
+            .footer__img--twitter{
+                &:hover{
+                    background-color:#1DA1F2;
+                }
+            }
+            .footer__img--pint{
+                &:hover{
+                    background-color: #BD081D;
+                }
+            }
+
+            .footer__img--gplus{
+                &:hover{
+                    background-color: #DC444B;
+                }
+            }
+            .footer__img--facebook{
+                padding-left:13px;
+                padding-right:13px;
+                &:hover{
+                   background-color: #3B5998;
+                }
             }
         }
     }

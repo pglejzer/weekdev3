@@ -681,7 +681,7 @@ body {
             .footer__img {
                 margin-left: 12px;
                 background-color: $black-color;
-                padding: 10px;
+                padding: 10px 12px;
                 border-radius: 100%;
                 &:hover{
                     transition: .7s;
@@ -704,8 +704,8 @@ body {
                 }
             }
             .footer__img--facebook{
-                padding-left:13px;
-                padding-right:13px;
+                padding-left:15px;
+                padding-right:15px;
                 &:hover{
                    background-color: #3B5998;
                 }

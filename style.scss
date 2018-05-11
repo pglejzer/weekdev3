@@ -685,23 +685,24 @@ body {
                 cursor: pointer;
                 &:hover{
                     transition: .7s;
+                    transform: scale(1.1);
                 }
             }
             .footer__img--twitter{
-                padding: 13px 13px;
+                padding: 14px 13px;
                 &:hover{
                     background-color:#1DA1F2;
                 }
             }
             .footer__img--pint{
-                padding: 10px 13px;
+                padding: 11px 13px;
                 &:hover{
                     background-color: #BD081D;
                 }
             }
 
             .footer__img--gplus{
-                padding: 12px 13px;
+                padding: 13px 13px;
                 &:hover{
                     background-color: #DC444B;
                 }
